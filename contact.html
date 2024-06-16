@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact</title>
+        <style>
+            body{
+            background-color: #3d3e42;
+        }
+        contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+}
+
+.contact h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 2.5vh;
+}
+
+.contact-card {
+  height: 20vw;
+  width: 20vw;
+  background-color: #3d3e42;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vh;
+  transition: all ease 0.5s;
+}
+
+.contact-card:hover {
+  background-color: #fec86a;
+}
+
+.contact-card img {
+  height: 7.5vw;
+  width: 7.5vw;
+  object-fit: contain;
+}
+
+.contact-card h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fbfbfb;
+}
+
+
+        </style>
+    </head>
+</html>
+<body>
+    <div class="contact">
+        <h1>Contact</h1>
+    <div class="cards">
+        <div class="contact-card">
+            <img src="images/linkedin.png" alt="linkedin">
+            <h2>Linkedin</h2>
+        </div>
+        <div class="contact-card">
+            <img src="images/telegram.png" alt="telegram">
+            <h2>Telegram</h2>
+        </div>
+        <div class="contact-card">
+            <img src="images/GitHub.png" alt="github">
+            <h2>Github</h2>
+        </div>
+    </div>
+</body>

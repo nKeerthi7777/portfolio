@@ -1,0 +1,251 @@
+<!---Log-in-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            max-height: 100vh;
+            background-color: #1F252E;
+        }
+
+        /*nav */
+        header {
+            padding: 1.7rem 1rem;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            max-width: 80%;
+            margin: auto;
+            align-items: center;
+            background-color: transparent;
+        }
+
+       
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: .97rem;
+            font-weight: 600;
+            letter-spacing: .7px;
+            padding: 1rem;
+            padding: 0.4rem 1rem;
+        }
+
+        nav a.active,
+        nav a:hover {
+            color: #00E8F8;
+            border-radius: 1rem;
+            transition: all.3s ease-in-out;
+        }
+
+        #click {
+            display: none;
+        }
+
+        .menu i {
+            color: #00E8F8;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        /* Nav */
+
+        section {
+            margin: 2rem 8.5rem;
+            ;
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5rem auto;
+        }
+
+        .main h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #fff;
+            /* animation: check 1s ease forwards;
+            animation-delay: .1s; */
+        }
+
+        .main p {
+            margin-top: 1rem;
+            font-size: .98rem;
+            color: #fff;
+        }
+
+        
+        .main h1 span:nth-child(1) {
+            font-size: 1.5rem;
+        }
+
+        .main h1 span:nth-child(2) {
+            color: #00E8F8;
+        }
+
+        .images {
+            background-image: url(/img/graph5.png);
+            background-repeat: no-repeat;
+            background-position: 0 -75px;
+            -webkit-box-shadow: 0 10px 10px -10px #000000;
+            -moz-box-shadow: 0 10px 10px -10px #000000;
+            box-shadow: 0px 16px 4px -10px #00E8F8;
+            width: 528px;
+            background-size: cover;
+        }
+
+
+        @media only screen and (max-width:480px) {
+            .menu {
+                display: block;
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #244D61;
+            }
+
+            header {
+                padding: 0.7rem 1rem;
+                align-items: center;
+                max-width: 100%;
+            }
+
+            nav {
+                position: absolute;
+                display: grid;
+                top: 75px;
+                text-align: center;
+                background-color: #1F252E;
+                left: -100%;
+                z-index: 1;
+                width: 100%;
+            }
+
+            #click:checked~nav {
+                left: 0%;
+                transition: all 0.3s ease;
+            }
+
+            section {
+                margin: 1rem 1.5rem;
+            }
+
+        }
+        
+        .images {
+            width: 25em;
+            height: 25em;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        .blue-bg-outer {
+            width: 25em;
+            height: 25em;
+            border-radius: 50%;
+            background: #33383C;
+            display: grid;
+            place-items: center;
+        }
+
+        .white-bg {
+            width: 21.875em;
+            height: 21.875em;
+            border-radius: 50%;
+            background: #fff;
+            display: grid;
+            place-items: center;
+        }
+
+        .blue-bg {
+            width: 18.75em;
+            height: 18.75em;
+            border-radius: 50%;
+            background: var(--primary-color);
+        }
+
+        .blue-bg img {
+            position: relative;
+            width: 100%;
+            border-radius: 50%;
+        }
+        @media only screen and (max-width: 320px) {
+            .images {
+                height: 17em;
+            }
+            .blue-bg-outer {
+                width: 16em;
+                height: 16em;
+
+            }
+
+            .white-bg {
+                width: 13em;
+                height: 13em;
+            }
+
+            .blue-bg {
+                width: 11em;
+                height: 11em;
+            }
+
+            .blue-bg img {
+                position: relative;
+                bottom: 20px;
+                right: 10px;
+                width: 100%;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        </label>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <section>
+        <div class="main">
+            <div class="detail">
+                <h1><span>Hi, It's Me</span> <br> I'm <span style="color:#00E8F8;">Keerthi Naragam</span></h1>
+                <p>I'm a professional Web Developer.</p>
+            </div>
+        </div>
+    </section>
+    <div class="images">
+        <div class="blue-bg-outer">
+           <div class="white-bg">
+                <div class="blue-bg">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqYTV1sArgX-ZNZUyLaEIvXKsWDIJqp1muANeDQsY1na7e7rMj7spoypkXZ5MGaWNA6h6VwHqh8Wppd8CaWKkbphDxwwxmg-jcS774pUzZtWHv6g9X5YDAvLCRVs5kikuvjkEHFOIs7vadCd-8YsgG3hkuyEjOCtZ77oCBZqcHhpvh3m5f8Lopztxwn8k/s1600/girl2.png" alt="image">
+                </div>
+           </div>
+        </div>
+    </div>
+</body>
+
+</html>

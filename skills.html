@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta charset="UTF-8">
+     <title>My Skills</title>
+     <style>
+        body{
+            background-color: #3d3e42;
+        }
+        skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+}
+
+.skills h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 2.5vh;
+}
+
+.skill-card {
+  height: 20vw;
+  width: 20vw;
+  background-color: #3d3e42;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vh;
+  transition: all ease 0.5s;
+}
+
+.skill-card:hover {
+  background-color: #fec86a;
+}
+
+.skill-card img {
+  height: 7.5vw;
+  width: 7.5vw;
+  object-fit: contain;
+}
+
+.skill-card h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fbfbfb;
+}
+
+
+     </style>
+   </head>
+<body>
+<section class="skills">
+    <h1>My Skills</h1>
+    <div class="cards">
+        <div class="skill-card">
+            <img src="images/python.svg" alt="python">
+            <h2>Python</h2>
+        </div>
+        <div class="skill-card">
+            <img src="images/html.svg" alt="html">
+            <h2>HTML</h2>
+        </div>
+        <div class="skill-card">
+            <img src="images/css.svg" alt="css">
+            <h2>CSS</h2>
+        </div>
+        <div class="skill-card">
+            <img src="images/js.svg" alt="js">
+            <h2>JavaScript</h2>
+        </div>
+    </div>
+</section>
+</body>
+</html>
